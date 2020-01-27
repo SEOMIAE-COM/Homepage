@@ -1,3 +1,25 @@
+/*DEBUGGER*/
+/* html * {
+	border: 1px solid lightgray;
+}
+
+html * * {
+	border: 1px solid lightgray;
+}
+
+html * * * {
+	border: 1px solid lightgray;
+}
+
+html * * * * {
+	border: 1px solid lightgray;
+}
+
+html * * * * * {
+	border: 1px solid lightgray;
+}
+ */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,17 +40,29 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 16px;
+/* 	border: 0; */
+/* 	font-size: 16px; */
 	font: inherit;
+	font-family: 'Noto Serif KR', serif;
+
 	vertical-align: baseline;
 }
 
-body {
-	line-height: 1;
+html {
+	line-height: 1.2;
+	font-size: 16px;
 }
+
+@media only screen and (min-width: 1000px) {
+    html {
+	    line-height: 1.2;
+	    font-size: 14px;
+    }
+}
+
 ol, ul {
 	list-style: none;
+	-webkit-list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -48,20 +82,112 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+h1 {
+	font-size: 4rem;
+}
+h2 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+
+/*
+========================================================
+*/
 header {
-    height: 10rem;
-    background-color: lightgray;
+    height: 8rem;
+    background-color: #131313;
+
+    display: grid;
+    grid-template-columns: 30rem auto;
+
+    color: white;
+}
+.site_title_container {
+	display: flex;
+    align-items: center;
+}
+.site_title {
+    font-size: 32px;
+    margin-left: 2rem;
+}
+/*site navigation list*/
+.site_navigation_container {
+	display: flex;
+    align-items: center;
+/*     justify-content: stretch; */
 }
 
-footer {
-    height: 10rem;
-    background-color: lightgray;
+.site_navigation_list {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 50% auto;
+/*     height: 100%; */
 }
 
-div ~ div {
-    margin-top: 40px;
+.site_navigation_listItem {
+	font-size: 3rem;
+	height: 100%;
+}
+.site_navigation_listItem.selected{
+border-bottom: 1.5rem solid #AE2E1D;
+}
+.site_navigation_list a {
+	text-decoration: none;
+	color: inherit;
+}
+/*
+========================================================
+*/
+.profile_container {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: auto 30rem;
+}
+
+.profile_name_container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding: 0 2rem 2rem 0;
+}
+.profile_name {
+	font-size: 4rem;
+	font-weight: bold;
 }
 
 #profile_img {
-	width: 50rem;
+    width: 30rem;
+}
+
+/*
+========================================================
+*/
+#contents {
+	background-color: darkgray;
+}
+.content_card {
+	margin: 2rem;
+	padding: 2rem;
+
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.content_card ul {
+	margin-left: 2rem;
+	list-style-type: disc;
+}
+
+.content_card ul li {
+	margin-bottom: 1rem;
+}
+/*
+========================================================
+*/
+
+footer {
+    height: 5rem;
+    background-color: #131313;
 }
