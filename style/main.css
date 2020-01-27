@@ -17,8 +17,8 @@ html * * * * {
 
 html * * * * * {
 	border: 1px solid lightgray;
-}
- */
+} */
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -52,12 +52,21 @@ html {
 	line-height: 1.2;
 	font-size: 16px;
 }
+body {
+	background-color: lightgray;
+}
 
 @media only screen and (min-width: 1000px) {
     html {
 	    line-height: 1.2;
 	    font-size: 14px;
     }
+
+    body {
+		max-width: 40vw;
+		margin: auto;
+    }
+
 }
 
 ol, ul {
@@ -89,10 +98,14 @@ h2 {
 	font-size: 3rem;
 	margin-bottom: 2rem;
 }
+h3 {
+	font-size: 2rem;
+}
 
 
 /*
 ========================================================
+Global Header
 */
 header {
     height: 8rem;
@@ -108,7 +121,7 @@ header {
     align-items: center;
 }
 .site_title {
-    font-size: 32px;
+    font-size: 4rem;
     margin-left: 2rem;
 }
 /*site navigation list*/
@@ -127,7 +140,7 @@ header {
 }
 
 .site_navigation_listItem {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	height: 100%;
 }
 .site_navigation_listItem.selected{
@@ -137,8 +150,10 @@ border-bottom: 1.5rem solid #AE2E1D;
 	text-decoration: none;
 	color: inherit;
 }
+
 /*
 ========================================================
+Introduction > Profile
 */
 .profile_container {
     background-color: lightgray;
@@ -163,7 +178,9 @@ border-bottom: 1.5rem solid #AE2E1D;
 
 /*
 ========================================================
+Global Content Card layout
 */
+
 #contents {
 	background-color: darkgray;
 }
@@ -183,6 +200,96 @@ border-bottom: 1.5rem solid #AE2E1D;
 .content_card ul li {
 	margin-bottom: 1rem;
 }
+
+.content_container {
+	border: 0.5rem solid #131313;
+
+	margin-bottom: 4rem;
+}
+
+
+/*
+========================================================
+Stories Content Card layout
+*/
+
+.content_card.story_card ul {
+	list-style-type: none;
+}
+
+.content_thumbnail_container {
+	display: flex;
+	justify-content: center;
+}
+.content_thumbnail {
+	width: 100%;
+	max-width: 50rem;
+}
+.content_title {
+	padding: 4rem 0;
+
+    border-top: 0.5rem solid #131313;
+    border-bottom: 0.5rem solid #131313;
+
+	text-align: center;
+}
+.content_title:before {
+	content: "[ "
+}
+.content_title:after {
+	content: " ]"
+}
+
+.button_container_link {
+	text-decoration: none;
+	color: inherit;
+}
+.button {
+	text-align: center;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: lightgray;
+	border: 1rem solid white;
+	border-radius: 2rem;
+}
+.button_label {
+	font-size: 2rem;
+}
+
+.foreign_sellers_container {
+	border: 1px solid darkgray;
+
+	padding: 2rem;
+}
+.type_title {
+	display: block;
+	border: 1px solid darkgray;
+	text-align: center;
+
+	padding: 2rem;
+
+	font-size: 1.5rem;
+}
+.type_title:after, .type_title:before {
+	content: " | "
+}
+.country_container {
+	border: 1px solid darkgray;
+	margin: 1rem 0;
+}
+.country_title {
+	display: block;
+	border: 1px solid darkgray;
+	text-align: center;
+
+	padding: 2rem;
+
+	font-size: 1.5rem;
+}
+
 /*
 ========================================================
 */
