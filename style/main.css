@@ -186,7 +186,7 @@ Introduction > Profile
 .profile_name {
 	font-size: 4rem;
 	font-weight: bold;
-	
+
 	word-break: keep-all; 
 	word-wrap:break-word;
 }
@@ -239,10 +239,12 @@ Stories Content Card layout
 .content_thumbnail_container {
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
 }
 .content_thumbnail {
 	width: 100%;
 	max-width: 50rem;
+	height: auto;
 }
 .content_title {
 	padding: 4rem 0;
