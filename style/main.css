@@ -143,7 +143,6 @@ header {
 .site_navigation_container {
 	display: flex;
     align-items: center;
-/*     justify-content: stretch; */
 }
 
 .site_navigation_list {
@@ -151,7 +150,6 @@ header {
 
     display: grid;
     grid-template-columns: 50% auto;
-/*     height: 100%; */
 }
 
 .site_navigation_listItem {
@@ -188,6 +186,9 @@ Introduction > Profile
 .profile_name {
 	font-size: 4rem;
 	font-weight: bold;
+	
+	word-break: keep-all; 
+	word-wrap:break-word;
 }
 
 #profile_img {
