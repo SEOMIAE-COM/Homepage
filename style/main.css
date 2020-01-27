@@ -63,11 +63,26 @@ body {
     }
 
     body {
+		max-width: 60vw;
+		margin: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    html {
+	    line-height: 1.2;
+	    font-size: 14px;
+    }
+
+    body {
 		max-width: 40vw;
 		margin: auto;
     }
 
 }
+
+
 
 ol, ul {
 	list-style: none;
@@ -142,6 +157,9 @@ header {
 .site_navigation_listItem {
 	font-size: 2.5rem;
 	height: 100%;
+
+	word-break: keep-all; 
+	word-wrap:break-word;
 }
 .site_navigation_listItem.selected{
 border-bottom: 1.5rem solid #AE2E1D;
