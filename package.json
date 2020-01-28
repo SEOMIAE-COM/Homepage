@@ -1,0 +1,29 @@
+{
+  "name": "seomiae-com",
+  "version": "1.0.0",
+  "description": "Private homepage",
+  "main": "src/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss rawStyle/*.css --use autoprefixer -d style/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEOMIAE-COM/Homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SEOMIAE-COM/Homepage/issues"
+  },
+  "homepage": "https://github.com/SEOMIAE-COM/Homepage#readme",
+  "browserslist": [
+    "defaults",
+    "ie >= 10"
+  ]
+}
