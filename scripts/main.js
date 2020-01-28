@@ -19,7 +19,7 @@ setupUI = function () {
     console.log("UI setup");
     
     // highlight current page link
-    const pagePaths = ["/kr/", "/kr/stories/"]
+    const pagePaths = ["/kr/about-the-author/", "/kr/stories/"]
     const pathname = location.pathname;
 
     const currentPageIndex = pagePaths.indexOf(pathname);

@@ -162,6 +162,7 @@ header {
 .site_navigation_listItem.selected{
 border-bottom: 1.5rem solid #AE2E1D;
 }
+.site_title_container a,
 .site_navigation_list a {
 	text-decoration: none;
 	color: inherit;
@@ -313,11 +314,8 @@ Stories Content Card layout
 }
 .country_title {
 	display: block;
-	border: 1px solid darkgray;
 	text-align: center;
-
 	padding: 2rem;
-
 	font-size: 1.5rem;
 }
 
