@@ -229,6 +229,16 @@ Global Content Card layout
 
 /*
 ========================================================
+About the Author page layout
+*/
+.content_card p {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+
+/*
+========================================================
 Stories Content Card layout
 */
 
