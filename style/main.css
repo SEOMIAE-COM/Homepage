@@ -138,6 +138,8 @@ header {
 .site_title {
     font-size: 4rem;
     margin-left: 2rem;
+    display: block;
+    width: 100%;
 }
 /*site navigation list*/
 .site_navigation_container {
