@@ -107,11 +107,16 @@ body {
     min-height: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: auto 1fr auto;
+    -ms-grid-rows: 8rem 1fr 5rem;
     grid-template-rows: auto 1fr auto;
-    -ms-grid-columns: auto;
+    -ms-grid-columns: 1fr;
     grid-template-columns: auto;
 }
+/* @media only screen and (min-width: 1000px) {
+	body {
+		-ms-grid-rows: 16rem 1fr 5rem;
+	}
+} */
 body > *:nth-child(1) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
@@ -149,9 +154,9 @@ header {
     display: -ms-grid;
 
     display: grid;
-    -ms-grid-columns: 30rem auto;
+    -ms-grid-columns: 30rem 1fr;
     grid-template-columns: 30rem auto;
-    -ms-grid-rows: auto;
+    -ms-grid-rows: 1fr;
     grid-template-rows: auto;
 
     color: white;
@@ -164,10 +169,10 @@ header > *:nth-child(2) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 2;
 }
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
 	header {
 		height: 16rem;
-		-ms-grid-columns: auto;
+		-ms-grid-columns: 1fr;
 		grid-template-columns: auto;
         -ms-grid-rows: 8rem 8rem;
         grid-template-rows: 8rem 8rem;
@@ -180,14 +185,19 @@ header > *:nth-child(2) {
 		-ms-grid-row: 2;
 		-ms-grid-column: 1;
 	}
-}
+} */
 .site_title_container {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+/* 	display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center; */
+}
+.site_title_container a {
+	display: block;
+	margin: auto;
+	margin-left: 0;
 }
 .site_title {
     font-size: 4rem;
@@ -209,6 +219,7 @@ header > *:nth-child(2) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100%;
 }
 
 .site_navigation_list {
@@ -217,25 +228,28 @@ header > *:nth-child(2) {
     display: -ms-grid;
 
     display: grid;
-    -ms-grid-columns: 50% auto;
+    -ms-grid-columns: 50% 1fr;
     grid-template-columns: 50% auto;
-    -ms-grid-rows: auto;
+    -ms-grid-rows: 1fr;
     grid-template-rows: auto;
 }
 
 .site_navigation_list > *:nth-child(1) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
+	display:block;
 }
 
 .site_navigation_list > *:nth-child(2) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 2;
+	display:block;
 }
 
 .site_navigation_listItem {
 	font-size: 2.5rem;
 	height: 100%;
+	display:block;
 }
 @media only screen and (min-width: 1000px) {
 	.site_navigation_listItem {
@@ -260,9 +274,9 @@ Introduction > Profile
     background-color: lightgray;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 30rem;
+    -ms-grid-columns: 1fr 30rem;
     grid-template-columns: auto 30rem;
-    -ms-grid-rows: auto;
+    -ms-grid-rows: 1fr;
     grid-template-rows: auto;
 }
 .profile_container > *:nth-child(1) {
