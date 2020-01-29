@@ -137,6 +137,13 @@ header {
 
     color: white;
 }
+@media only screen and (min-width: 1000px) {
+	header {
+		height: 16rem;
+		grid-template-columns: auto;
+        grid-template-rows: 8rem 8rem;
+	}
+}
 .site_title_container {
 	display: flex;
     align-items: center;
@@ -146,6 +153,12 @@ header {
     margin-left: 2rem;
     display: block;
     width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+	.site_title {
+		font-size: 3rem;
+		height: 100%;
+	}
 }
 /*site navigation list*/
 .site_navigation_container {
@@ -165,6 +178,12 @@ header {
 	font-size: 2.5rem;
 	height: 100%;
 }
+@media only screen and (min-width: 1000px) {
+	.site_navigation_listItem {
+		text-align: center;
+	}
+}
+
 .site_navigation_listItem.selected{
 border-bottom: 1.5rem solid #AE2E1D;
 }
