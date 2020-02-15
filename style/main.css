@@ -187,28 +187,21 @@ header > *:nth-child(2) {
 	}
 } */
 .site_title_container {
-	display: -webkit-box;
 	display: -ms-flexbox;
-/* 	display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; */
+	display: flex;
+	align-items: center;
 }
 .site_title_container a {
-	display: block;
-	margin: auto;
-	margin-left: 0;
+	width: 100%;
+	margin-left: 2rem;
 }
 .site_title {
     font-size: 4rem;
-    margin-left: 2rem;
-    display: block;
     width: 100%;
 }
 @media only screen and (min-width: 1000px) {
 	.site_title {
 		font-size: 3rem;
-		height: 100%;
 	}
 }
 /*site navigation list*/
