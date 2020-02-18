@@ -259,6 +259,30 @@ border-bottom: 1.5rem solid #AE2E1D;
 	color: inherit;
 }
 
+.languages {
+	height: 3rem;
+    background-color: darkgray;
+
+    display: -ms-grid;
+    display: grid;
+  
+    -ms-grid-columns: 1fr;
+    grid-template-columns: auto;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: auto;
+
+    justify-content: right;
+    align-content: center;
+    padding-right: 2rem;
+
+    color: white;
+}
+.languages a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.5rem;
+}
+
 /*
 ========================================================
 Introduction > Profile
